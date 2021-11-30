@@ -59,7 +59,6 @@ class TransparentWindow(Gtk.Window):
         self.connect('delete-event', self.on_close)
         self.connect('destroy', self.on_close)
         self.connect('draw', self.draw)
-        self.connect("key-press-event", self.on_keypress)
         self.connect("window-state-event", self.on_window_state_event)
         self.set_decorated(False)
 
