@@ -7,7 +7,7 @@ url="https://github.com/arcolinux/arcolinux-logout"
 arch=('x86_64')
 depends=('python3' 'python-cairo')
 license=('GPL3')
-source=("git+https::/github.com/git-fal7/arcolinux-logout")
+source=("git+https://github.com/git-fal7/arcolinux-logout")
 md5sums=('SKIP')
 
 package () {
