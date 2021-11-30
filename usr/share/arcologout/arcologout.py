@@ -263,13 +263,6 @@ class TransparentWindow(Gtk.Window):
         context.paint()
         context.set_operator(cairo.OPERATOR_OVER)
 
-    def on_keypress(self, widget=None, event=None, data=None):
-        self.shortcut_keys = [self.binds.get('cancel'), self.binds.get('shutdown'), self.binds.get('restart'), self.binds.get('suspend'), self.binds.get('logout'), self.binds.get('lock'), self.binds.get('hibernate'), self.binds.get('settings')]
-
-        for key in self.shortcut_keys:
-            if event.keyval == Gdk.keyval_to_lower(Gdk.keyval_from_name(key)):
-                self.click_button(widget, key)
-
     def click_button(self, widget, data=None):
 
         if not data == self.binds.get('settings') and not data == "light":
